@@ -1,5 +1,6 @@
 <script setup>
 import { nextTick, ref } from 'vue';
+import { renderInline } from '../lib/markdown';
 import { useDataStore } from '../stores/data';
 
 const props = defineProps({
@@ -75,7 +76,7 @@ function save(event) {
                 ]"
                 @dblclick="edit"
             >
-                {{ node.label }}
+                <span class="md" v-html="renderInline(node.label)"></span>
                 <span v-if="node.disabled" class="ml-2 rounded bg-slate-800 px-1.5 py-0.5 text-[10px] uppercase no-underline">
                     disabled
                 </span>

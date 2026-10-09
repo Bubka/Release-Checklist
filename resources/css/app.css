@@ -29,4 +29,16 @@
     .card {
         @apply rounded-xl border border-slate-800 bg-slate-900/70;
     }
+    .md code {
+        @apply rounded bg-slate-800 px-1.5 pb-0.5 pt-1 font-mono text-[0.85em] text-indigo-300;
+    }
+    .md a {
+        @apply text-indigo-400 underline hover:text-indigo-300;
+    }
+    .md strong {
+        @apply font-bold;
+    }
+    .md em {
+        @apply italic;
+    }
 }
