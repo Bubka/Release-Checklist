@@ -1,4 +1,5 @@
 # Release-Checklist
+
 A simple checklist tool to help during the release process of a new software version.
 
 Create reusable **templates** (items and nested sections, reorderable), then instantiate **checklists**
