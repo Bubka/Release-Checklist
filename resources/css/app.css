@@ -36,7 +36,7 @@
         @apply text-indigo-400 underline hover:text-indigo-300;
     }
     .md strong {
-        @apply font-bold;
+        @apply font-extrabold tracking-wide;
     }
     .md em {
         @apply italic;
